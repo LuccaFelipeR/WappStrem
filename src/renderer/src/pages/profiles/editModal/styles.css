@@ -1,0 +1,78 @@
+
+@import "../../../css/token.css";
+.edit-modal-container {
+  background-color: var(--md-sys-color-surface-dark) !important;
+  min-width: 600px;
+}
+.edit-modal-container .heading p {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  padding-top: 25px;
+}
+.edit-modal-container .login {
+  height: auto;
+  padding: 25px;
+}
+.edit-modal-container .login .loginForm {
+  padding: 0;
+  margin: 0;
+}
+.edit-modal-container .login .heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+}
+.edit-modal-container .login .heading p {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px;
+}
+.edit-modal-container .login .playlist-name-input {
+  padding: 15px;
+  width: 100%;
+  border-radius: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid var(--md-ref-palette-primary60);
+  outline: none;
+  color: white;
+  font-size: 17px;
+  background-color: var(--md-ref-palette-primary30);
+}
+.edit-modal-container .login .btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.edit-modal-container .login .btns button {
+  width: 100%;
+  transition: 0.4s;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  border: 2px solid var(--md-sys-color-on-surface-dark);
+  background-color: transparent;
+  width: 150px;
+}
+.edit-modal-container .login .btns button:hover {
+  cursor: pointer;
+  background-color: var(--md-source);
+}
+
+@media only screen and (max-width: 768px) {
+  .edit-modal-container {
+    min-width: 95%;
+  }
+}/*# sourceMappingURL=styles.css.map */

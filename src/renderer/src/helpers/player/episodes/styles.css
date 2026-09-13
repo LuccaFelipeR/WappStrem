@@ -1,0 +1,131 @@
+
+@import "../../../css/token.css";
+.episodes-container {
+  position: fixed;
+  bottom: 140px;
+  left: 10px;
+  background-color: white;
+  width: 99%;
+  height: auto;
+  max-height: 70%;
+  background-color: var(--md-ref-palette-primary30);
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 70px;
+  transition: 0.3s;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  overflow: scroll;
+}
+.episodes-container .cancel-icon {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 30px;
+  transition: 0.4s;
+}
+.episodes-container .cancel-icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.episodes-container select {
+  padding: 10px;
+  background-color: var(--md-ref-palette-primary40);
+  color: white;
+  border: none;
+  font-size: 15px;
+  border-radius: 3px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  z-index: 99;
+}
+.episodes-container select option {
+  height: 30px;
+}
+.episodes-container .title {
+  color: white;
+}
+.episodes-container .show {
+  opacity: 0;
+}
+.episodes-container .episodes {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  overflow-x: hidden;
+  align-items: flex-start;
+}
+.episodes-container .episodes .episode .episode-img {
+  position: relative;
+  border-radius: 5px;
+  background: black;
+  width: 280px;
+  height: 200px;
+}
+.episodes-container .episodes .episode .episode-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.episodes-container .episodes .episode .episode-img .now-playing {
+  color: black;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-weight: bold;
+  margin: 0;
+  background-color: white;
+  padding: 5px;
+  border-radius: 0;
+  border-bottom-right-radius: 4px;
+  font-size: 13px;
+}
+.episodes-container .episodes .episode .episode-img .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.episodes-container .episodes .episode .episode-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.episodes-container .episodes .episode .episode-info .h4 {
+  color: white;
+}
+.episodes-container .episodes .episode .episode-info .dur {
+  color: rgb(202, 199, 199);
+  text-decoration: none;
+}
+.episodes-container .episodes .episode .text {
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+  padding: 10px;
+  padding-top: 0;
+}
+
+@media all and (max-width: 768px) {
+  .episodes-container {
+    bottom: 0;
+    height: 350px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .episodes-container {
+    top: 0;
+    height: 100%;
+    left: 0;
+  }
+  .episodes-container select {
+    left: 60px;
+  }
+}/*# sourceMappingURL=styles.css.map */

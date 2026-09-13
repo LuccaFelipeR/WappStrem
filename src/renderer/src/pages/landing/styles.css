@@ -1,0 +1,41 @@
+.splash p {
+  margin: 0;
+  padding: 0;
+}
+.splash .playList a span {
+  margin-top: 10px;
+}
+.splash .playList a p {
+  margin-top: 5px;
+  color: gray;
+  font-size: 17px;
+}
+.splash .list-playlists {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--md-source);
+  padding: 12px;
+  border-radius: 3px;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.splash .list-playlists .icon {
+  color: white;
+}
+.splash .list-playlists:hover {
+  background-color: var(--md-source);
+}
+.splash .list-playlists:hover .icon {
+  color: white;
+}
+.splash .list-playlists:hover p {
+  color: white;
+}
+.splash .list-playlists p {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}/*# sourceMappingURL=styles.css.map */

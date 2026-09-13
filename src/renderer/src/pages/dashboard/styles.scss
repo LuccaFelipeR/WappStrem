@@ -1,0 +1,65 @@
+@import "../../css/variables";
+@import "../../css/token.css";
+
+.invalid-user-popup{        
+    background-color: white;
+    padding: 40px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(90, 90, 90);
+    width: 400px;
+    margin: auto;
+    margin-top: 300px;
+    .cross-icon{
+        border: 2px solid $primary;
+        border-radius: 50%;
+        padding: 5px;
+        width: 60px;
+        height: 60px;
+        color: $primary;
+    }
+    .invalid-title{
+        color: #595959;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .ok-btn{
+        color: white;
+        background: $primary;
+        border: none;
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 5px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+
+.no-data-found-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    // background-color: white;
+
+    h2 {
+       color: white;
+       text-align: center;
+    }
+
+    img {
+       width: 120px;
+       height: 120px;
+    }
+ }

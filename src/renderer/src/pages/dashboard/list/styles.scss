@@ -1,0 +1,112 @@
+@import "../../../css/variables";
+@import "../../../css/token.css";
+
+
+.list-container {
+   .continue-watching-container-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(29, 29, 29, 0.7);
+      z-index: 999999;
+
+      .continue-watching-container {
+         position: absolute; 
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: var(--md-sys-color-on-surface-dark);
+         border-radius: 5px;
+         padding: 20px;
+         z-index: 99;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+
+         .title {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            margin-top: 20px;
+         }
+
+         .cw-btns-container {
+            display: flex;
+            gap: 10px;
+
+            button {
+               padding: 10px;
+               outline: none;
+               border: none;
+               background-color: var(--md-sys-color-background-dark);
+               color: white;
+               font-size: 15px;
+               border-radius: 3px;
+               font-weight: 500;
+               cursor: pointer;
+               transition: .4s;
+
+               &:hover {
+                  opacity: .7;
+                  cursor: pointer;
+               }
+
+               &:nth-child(2) {
+                  background-color: rgb(207, 0, 0);
+               }
+            }
+         }
+      }
+   }
+
+   .item {
+      position: relative;
+
+      .caption {
+         .control {
+            padding: 5px;
+         }
+      }
+
+      .watched-progress {
+         height: 5px;
+         width: 0%;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         background-color: red;
+         z-index: 1;
+      }
+
+      &:hover {
+         .watched-progress {
+            display: none;
+         }
+      }
+
+   }
+
+}
+
+@media only screen and (max-width:1300px) {
+   .list-container {
+      .category .item {
+         height: 200px;
+      }
+
+      .ReactVirtualized__Grid {
+         .ReactVirtualized__Grid__innerScrollContainer {
+            .item {
+               height: 200px;
+            }
+         }
+      }
+   }
+
+}

@@ -1,0 +1,27 @@
+.network-alert-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--md-sys-color-surface-dark);
+}
+.network-alert-container .network-icon {
+  color: var(--md-source);
+  font-size: 50px;
+}
+.network-alert-container p, .network-alert-container h2 {
+  margin: 0;
+  color: white;
+}
+.network-alert-container h2 {
+  margin-top: 20px;
+}
+.network-alert-container p {
+  margin-top: 5px;
+}
+.network-alert-container button {
+  padding: 13px;
+  border-radius: 3px;
+  font-size: 15px;
+}/*# sourceMappingURL=styles.css.map */

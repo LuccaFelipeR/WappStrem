@@ -1,0 +1,52 @@
+
+
+.close-icon{
+    background-color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999;
+    transition: .4s;
+    &:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+.btnGroup {
+   
+
+    .fav-loader-container {
+        .fav-loader {
+            color: var(--md-source);
+        }
+    }
+
+}
+
+.thumb{
+position: relative;
+.watched-progress{
+    height: 5px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+ }  
+}
+
+@media only screen and (max-width:1000px) {
+    .btnGroup{
+        .fav-loader-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

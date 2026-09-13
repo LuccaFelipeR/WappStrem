@@ -1,0 +1,50 @@
+.error-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        color: white;
+    }
+    .btns-container{
+        display: flex;
+        column-gap: 10px;
+        button {
+            padding: 10px;
+            font-weight: 550;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            color: white;
+            border-radius: 3px;
+            ;
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .back-btn{
+            background-color: white;
+            color: black;
+        }
+        .purple {
+            background-color: #615DFC;
+            color: white;
+        }
+        
+        .red {
+            background-color: #B32100;
+            color: white;
+        }
+        
+        .green {
+            background-color: #4fa162;
+            color: white;
+        }
+    }
+}

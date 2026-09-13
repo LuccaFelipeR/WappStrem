@@ -1,0 +1,77 @@
+@import "../../../../css/variables";
+// @import "../../app/main.css";
+@import "../../../../css/token.css";
+
+.liveTv{
+    .steamDetail{
+        position: relative;
+    }
+    .loader-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: var(--md-ref-palette-primary50);
+    }
+    .no-category-found{
+        text-align: center;
+        margin-top: 100px;
+        color: white;
+    }
+    .MuiSlider-root{
+        span{
+
+            background-color: var(--md-ref-palette-primary50);
+        }
+    }
+    .fav-and-delete{
+        cursor: pointer;
+        svg{
+            transition: .4s;
+            &:hover{
+                opacity: .5;
+            }
+        }
+    }
+    .live-stream-count{
+        font-size: 20px;
+    }
+}
+
+.no-epg-found{
+    height: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center; 
+}
+}
+
+
+.no-data-found-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    // background-color: white;
+
+    h2 {
+       color: white;
+       text-align: center;
+    }
+
+    img {
+       width: 120px;
+       height: 120px;
+    }
+ }

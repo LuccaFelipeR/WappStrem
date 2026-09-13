@@ -1,0 +1,8 @@
+.scrollable-list {
+  display: flex;
+  overflow-x: hidden;
+  padding-left: 20px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding: 20px;
+}/*# sourceMappingURL=styles.css.map */

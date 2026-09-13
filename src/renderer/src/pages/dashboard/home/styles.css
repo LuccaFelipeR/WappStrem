@@ -1,0 +1,28 @@
+
+.list-container .item {
+  position: relative;
+}
+.list-container .item .caption .control {
+  padding: 5px;
+}
+.list-container .item .watched-progress {
+  height: 5px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  z-index: 1;
+}
+.list-container .item:hover .watched-progress {
+  display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .list-container .category .item {
+    height: 200px;
+  }
+  .list-container .ReactVirtualized__Grid .ReactVirtualized__Grid__innerScrollContainer .item {
+    height: 200px;
+  }
+}/*# sourceMappingURL=styles.css.map */

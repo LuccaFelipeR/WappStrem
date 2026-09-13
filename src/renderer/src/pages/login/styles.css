@@ -1,0 +1,101 @@
+
+@import "../../css/token.css";
+.login {
+  position: relative;
+}
+.login p, .login h2, .login h1 {
+  margin: 0;
+  padding: 0;
+}
+.login .error {
+  position: absolute;
+  bottom: -37px;
+  font-size: 14px;
+  right: 0;
+  color: rgb(226, 5, 5);
+}
+.login .modal-container {
+  background-color: red;
+}
+
+.list-playlists {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--md-source);
+  padding: 12px;
+  border-radius: 3px;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.list-playlists .icon {
+  color: white;
+}
+.list-playlists:hover {
+  background-color: var(--md-source);
+}
+.list-playlists:hover .icon {
+  color: white;
+}
+.list-playlists:hover p {
+  color: white;
+}
+.list-playlists p {
+  color: white !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.invalid-user-popup-login {
+  background-color: var(--md-sys-color-surface-dark);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+}
+.invalid-user-popup-login .cross-icon {
+  border: 2px solid var(--md-sys-color-outline-variant-dark);
+  border-radius: 50%;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  color: var(--md-sys-color-outline-variant-dark);
+}
+.invalid-user-popup-login .invalid-title {
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.invalid-user-popup-login .invalid-description {
+  margin-top: 4px;
+  color: white;
+  font-size: 17px;
+}
+.invalid-user-popup-login .error-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.invalid-user-popup-login .ok-btn {
+  color: white;
+  background: var(--md-source);
+  border: none;
+  padding: 15px;
+  width: 95%;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.invalid-user-popup-login .ok-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

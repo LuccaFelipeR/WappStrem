@@ -1,0 +1,53 @@
+.close-icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999;
+  transition: 0.4s;
+}
+.close-icon:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btnGroup .drop-down-container {
+  position: relative;
+}
+.btnGroup .drop-down-container .down-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.btnGroup .fav-loader-container .fav-loader {
+  color: var(--md-source);
+}
+
+.thumb {
+  position: relative;
+}
+.thumb .watched-progress {
+  height: 5px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+  .btnGroup .fav-loader-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=styles.css.map */

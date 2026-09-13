@@ -1,0 +1,46 @@
+
+@import "../../../css/token.css";
+.invalid-user-popupp {
+  background-color: white;
+  z-index: 99999;
+  transform: translateY(-50%);
+  padding: 40px;
+  padding-bottom: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(90, 90, 90);
+}
+.invalid-user-popupp .cross-icon {
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+}
+.invalid-user-popupp .invalid-title {
+  color: #595959;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+.invalid-user-popupp .action-btns {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.invalid-user-popupp .ok-btn {
+  color: white;
+  background: var(--md-source);
+  border: none;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+.invalid-user-popupp .ok-btn:hover {
+  cursor: pointer;
+}
+.invalid-user-popupp .ok-btn:nth-child(2) {
+  background: gray;
+}/*# sourceMappingURL=styles.css.map */

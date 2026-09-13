@@ -1,0 +1,103 @@
+@import url("../../../css/token.css");
+.enter-parental-lock-container {
+  width: 600px;
+  padding: 10px;
+  height: auto;
+  background: var(--md-ref-palette-primary30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  z-index: 999999 !important;
+}
+.enter-parental-lock-container .players {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 15px;
+}
+.enter-parental-lock-container .players input {
+  padding: 20px;
+  border: 2px solid var(--md-ref-palette-primary70);
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.4s;
+}
+.enter-parental-lock-container .players input::-moz-placeholder {
+  color: lightgray;
+}
+.enter-parental-lock-container .players input::placeholder {
+  color: lightgray;
+}
+.enter-parental-lock-container .players input:focus {
+  border-color: white;
+}
+.enter-parental-lock-container .players .player {
+  display: flex;
+}
+.enter-parental-lock-container .players .player p {
+  color: white;
+  font-weight: 500;
+}
+.enter-parental-lock-container .close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 99;
+  width: 20px;
+  height: 20px;
+  color: black;
+  padding: 1px;
+  border-radius: 50%;
+  background-color: white;
+}
+.enter-parental-lock-container h2 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: var(--md-ref-palette-primary20);
+}
+.enter-parental-lock-container .heading {
+  border: none !important;
+}
+.enter-parental-lock-container .heading p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.enter-parental-lock-container .enter-pin-code-title {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.enter-parental-lock-container .add-btns {
+  display: flex;
+  margin-top: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.enter-parental-lock-container .add-btns .btn {
+  min-width: 50px;
+  font-size: 16px;
+  height: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+  .enter-parental-lock-container {
+    width: 95%;
+  }
+  .enter-parental-lock-container .players {
+    width: 100%;
+  }
+  .enter-parental-lock-container .add-btns {
+    width: 85%;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,140 @@
+
+@import "../../css/token.css";
+.profileSection {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: fixed;
+  width: 100%;
+  row-gap: 50px;
+  height: 100vh;
+  overflow-y: hidden;
+  z-index: 9;
+  flex-direction: column;
+}
+.profileSection .ad-container, .profileSection .ad-container-2 {
+  width: 10%;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.profileSection .ad-container-2 {
+  left: unset;
+  right: 10px;
+}
+.profileSection > img,
+.profileSection > svg {
+  max-height: 150px;
+  max-width: 425px;
+  max-height: 150px;
+}
+.profileSection > img path:last-child,
+.profileSection > svg path:last-child {
+  fill: var(--md-ref-palette-primary40);
+}
+.profileSection .manage-profile-btn-container {
+  background-color: transparent;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.profileSection .manage-profile-btn-container .manage-profile-btn {
+  cursor: pointer;
+  padding: 18px;
+  width: 200px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  border: 1px solid var(--md-source);
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.4s;
+  background-color: var(--md-ref-palette-primary30);
+}
+.profileSection .manage-profile-btn-container .manage-profile-btn:hover {
+  opacity: 0.5;
+}
+.profileSection ::-webkit-scrollbar {
+  display: none;
+}
+.profileSection .profileList {
+  max-height: 450px;
+  overflow-y: scroll;
+}
+.profileSection .profileList .thumb {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: var(--md-ref-palette-primary90);
+  border-radius: 4px;
+  transition: 0.4s;
+  position: relative;
+}
+.profileSection .profileList .thumb .edit-delete-icons-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 103, 103, 0.6);
+  transition: 0.5s;
+}
+.profileSection .profileList .thumb .edit-delete-icons-container img {
+  background-color: rgba(54, 54, 54, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.profileSection .profileList .thumb .edit-delete-icons-container img:hover {
+  background-color: rgba(87, 87, 87, 0.3);
+}
+.profileSection .profileList .thumb .text {
+  font-size: 20px;
+  font-weight: 500;
+}
+.profileSection .profileList .thumb:not(.add) svg {
+  width: 100px;
+}
+.profileSection .profileList .thumb.add .thumb {
+  background-color: var(--md-ref-palette-primary40);
+}
+.profileSection .profileList .thumb.add svg {
+  width: 70px;
+}
+.profileSection .profileList .thumb.add svg circle {
+  fill: var(--md-ref-palette-primary30);
+}
+.profileSection .profileList .thumb:hover {
+  cursor: pointer;
+}
+.profileSection .profileList .thumb:hover .thumb {
+  box-shadow: 0px 4px 30px 0px rgba(185, 183, 255, 0.6980392157);
+  border: #ffffff solid 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .profileSection .manage-profile-btn-container {
+    height: 200px;
+  }
+  .profileSection .manage-profile-btn-container .manage-profile-btn {
+    width: 70%;
+  }
+}/*# sourceMappingURL=styles.css.map */

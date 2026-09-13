@@ -1,0 +1,72 @@
+@import "../../css/variables.scss";
+@import "../../css/token.css";
+
+.carousel-login {
+    width: 597px;
+    height: 498px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    row-gap: 20px;
+
+    img {
+        width: 550px;
+        height: 550px;
+    }
+
+    .inner {
+        white-space: nowrap;
+        transition: transform 0.3s;
+    }
+
+    .indicators {
+        display: flex;
+        justify-content: center;
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            background-color: var(--md-sys-color-on-surface-light);
+            border-radius: 50%;
+            transition: .5s;
+            margin: 4px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .active-indicator {
+            width: 12px;
+            height: 12px;
+            background-color: var(--md-ref-palette-primary40);
+            border-radius: 50%;
+            transform: scale(1.4);
+            transition: .5s;
+            margin: 4px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .carousel-item {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        color: var(--md-ref-palette-neutral90);
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+}

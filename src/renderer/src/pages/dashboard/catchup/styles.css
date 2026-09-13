@@ -1,0 +1,88 @@
+
+@import "../../../css/token.css";
+.liveTv .steamDetail {
+  position: relative;
+}
+.liveTv .steamDetail .videoPlay {
+  height: 52%;
+}
+.liveTv .loader-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--md-ref-palette-primary50);
+}
+.liveTv .no-category-found {
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+}
+.liveTv .MuiSlider-root span {
+  background-color: var(--md-ref-palette-primary50);
+}
+
+.no-epg-found {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.play-epg-icon {
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 33px;
+}
+.play-epg-icon:hover {
+  opacity: 0.6;
+}
+
+.epg-dates {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+  padding-left: 10px;
+}
+.epg-dates p {
+  background-color: lightgray;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding: 10px;
+  border-radius: 100px;
+  font-size: 14px;
+  transition: 0.4s;
+}
+.epg-dates p:hover {
+  cursor: pointer;
+}
+.epg-dates .selected-epg-date {
+  background-color: var(--md-source);
+  color: white;
+  transform: scale(1.05);
+}
+
+.no-data-found-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.no-data-found-container h2 {
+  color: white;
+  text-align: center;
+}
+.no-data-found-container img {
+  width: 120px;
+  height: 120px;
+}/*# sourceMappingURL=styles.css.map */

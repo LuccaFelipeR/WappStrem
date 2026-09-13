@@ -1,0 +1,115 @@
+@import url("../../css/token.css");
+
+.add-list-container {
+  background: var(--md-ref-palette-primary30);
+  width: 550px;
+
+  h2 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: var(--md-ref-palette-primary20)
+  }
+
+  .epg-source-listings {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: scroll;
+    padding-bottom: 70px;
+
+    .epg-source-container {
+      display: flex;
+      padding: 15px;
+      justify-content: space-between;
+      align-items: center;
+
+      .radio-and-details {
+display: flex;
+        .details {
+          display: flex;
+          justify-content: start;
+          align-items: start;
+          flex-direction: column;
+          gap: 5px;
+
+          p {
+            margin: 0;
+            padding: 0;
+            color: white;
+          }
+
+        }
+
+        .title {
+          font-size: 19px;
+          font-weight: bold;
+        }
+
+        .desc {
+          font-size: 13px;
+          width: 90%;
+          color: lightgray;
+        }
+      }
+
+      .open-epg-icon {
+        cursor: pointer;
+        transition: .4s;
+
+        &:hover {
+          opacity: .5;
+        }
+      }
+
+      .download-status-container {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        .status {
+          color: rgb(3, 201, 3);
+          font-size: 16px;
+          font-weight: bold;
+          padding: 0;
+          letter-spacing: .5px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .add-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 50px;
+    color: white;
+    border-radius: 100px;
+    box-shadow: 0 0 50px rgb(82, 82, 82);
+    transition: .5s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .5;
+    }
+  }
+}
+
+@media only screen and (max-width:768px){
+  .add-list-container{
+    width: 300px;
+    .epg-source-listings{
+      .radio-and-details{
+align-items: center;
+        .details{
+          .desc{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

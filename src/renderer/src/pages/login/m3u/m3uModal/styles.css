@@ -1,0 +1,57 @@
+@import url("../../../../css/token.css");
+.m3u-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  row-gap: 20px;
+}
+.m3u-modal-container .content p {
+  color: white;
+  margin: 0;
+}
+.m3u-modal-container .content .content-items {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+.m3u-modal-container .content .content-items p {
+  margin: 0;
+}
+.m3u-modal-container .content .content-items .content-item {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.m3u-modal-container .content .content-items .content-item .dot {
+  background-color: var(--md-source);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.m3u-modal-container .content .content-items .content-item .not-required {
+  color: #6F7B9D;
+}
+.m3u-modal-container .content .content-items .content-item .required {
+  color: #FF4949;
+}
+.m3u-modal-container .content .content-items .content-item .recommended {
+  color: #386EFF;
+}
+.m3u-modal-container .ok-btn {
+  color: white;
+  background: var(--md-ref-palette-primary50);
+  border: none;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+.m3u-modal-container .ok-btn:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

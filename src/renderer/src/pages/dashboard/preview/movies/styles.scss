@@ -1,0 +1,66 @@
+@import "../../../../css/token.css";
+
+.close-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999;
+    transition: .4s;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+.btnGroup {
+    button {
+        position: relative;
+
+        .watched-timeline {
+            width: 0%;
+            position: absolute;
+            bottom: -2px;
+            left: -1px;
+            height: 5px;
+            border-bottom-left-radius: 1px;
+            background-color: red;
+            z-index: 999;
+        }
+
+        &:hover {
+            .watched-timeline {
+
+                display: none;
+            }
+        }
+    }
+
+    .fav-loader-container {
+        .fav-loader {
+            color: var(--md-source);
+        }
+    }
+
+}
+
+.swiper-wrapper{
+    display: flex;
+    
+}
+
+@media only screen and (max-width:1000px) {
+    .btnGroup{
+        .fav-loader-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

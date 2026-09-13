@@ -1,0 +1,57 @@
+.disclaimer-container-paper{
+    background-color: var(--md-ref-palette-primary10) !important;
+.disclaimer-container {
+    padding: 40px;
+    min-width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    p,h1,h2, li{
+        margin: 0;
+            padding: 0;
+            color: white;
+    }
+    .title {
+        text-align: center;
+        font-size: 27px;
+    }
+    .disclaimer-title{
+
+    }
+    .list-container {
+        margin-top: 20px;
+        list-style:disc;
+        li {
+            margin-top: 10px;
+            font: 500;
+        }
+    }
+    .disclaimer-btns-container{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        button {
+            padding: 14px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 3px;
+            border: 1px solid var(--md-source);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: var(--md-source);
+            letter-spacing: 1px;
+            transition: .4s;
+            cursor: pointer;
+            &:nth-child(2){
+                background-color: transparent;
+            }
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+}

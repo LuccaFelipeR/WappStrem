@@ -1,0 +1,84 @@
+
+@import "../../../css/token.css";
+.list-container .continue-watching-container-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(29, 29, 29, 0.7);
+  z-index: 999999;
+}
+.list-container .continue-watching-container-modal .continue-watching-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--md-sys-color-on-surface-dark);
+  border-radius: 5px;
+  padding: 20px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.list-container .continue-watching-container-modal .continue-watching-container .title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+.list-container .continue-watching-container-modal .continue-watching-container .cw-btns-container {
+  display: flex;
+  gap: 10px;
+}
+.list-container .continue-watching-container-modal .continue-watching-container .cw-btns-container button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--md-sys-color-background-dark);
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.list-container .continue-watching-container-modal .continue-watching-container .cw-btns-container button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.list-container .continue-watching-container-modal .continue-watching-container .cw-btns-container button:nth-child(2) {
+  background-color: rgb(207, 0, 0);
+}
+.list-container .item {
+  position: relative;
+}
+.list-container .item .caption .control {
+  padding: 5px;
+}
+.list-container .item .watched-progress {
+  height: 5px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  z-index: 1;
+}
+.list-container .item:hover .watched-progress {
+  display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .list-container .category .item {
+    height: 200px;
+  }
+  .list-container .ReactVirtualized__Grid .ReactVirtualized__Grid__innerScrollContainer .item {
+    height: 200px;
+  }
+}/*# sourceMappingURL=styles.css.map */

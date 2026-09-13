@@ -1,0 +1,352 @@
+
+@import "../../css/token.css";
+.video-js-player, .video-js-player-fullscreen {
+  position: relative;
+  height: 100%;
+}
+.video-js-player p, .video-js-player h1, .video-js-player h2, .video-js-player-fullscreen p, .video-js-player-fullscreen h1, .video-js-player-fullscreen h2 {
+  margin: 0;
+  padding: 0;
+}
+.video-js-player .progress-bar, .video-js-player .progress-bar-wo-fullscreen, .video-js-player-fullscreen .progress-bar, .video-js-player-fullscreen .progress-bar-wo-fullscreen {
+  width: 100%;
+  height: 9px;
+  background-color: lightgray;
+  margin-top: 15px;
+  position: relative;
+  border-radius: 3px;
+  z-index: 999;
+}
+.video-js-player .progress-bar .completed-progress, .video-js-player .progress-bar-wo-fullscreen .completed-progress, .video-js-player-fullscreen .progress-bar .completed-progress, .video-js-player-fullscreen .progress-bar-wo-fullscreen .completed-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--md-source);
+  border-radius: 3px;
+}
+.video-js-player .progress-bar-wo-fullscreen, .video-js-player-fullscreen .progress-bar-wo-fullscreen {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  z-index: 999;
+  width: 95%;
+  transform: translateX(-50%);
+}
+.video-js-player .current-program-timings, .video-js-player-fullscreen .current-program-timings {
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  z-index: 999;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(-50%);
+}
+.video-js-player .current-program-timings p, .video-js-player-fullscreen .current-program-timings p {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+.video-js-player .error-modal, .video-js-player-fullscreen .error-modal {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.video-js-player .error-modal .back-btn, .video-js-player-fullscreen .error-modal .back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999999;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+.video-js-player .error-modal .back-btn:hover, .video-js-player-fullscreen .error-modal .back-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.video-js-player .error-modal p, .video-js-player-fullscreen .error-modal p {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+.video-js-player .error-modal button, .video-js-player-fullscreen .error-modal button {
+  font-weight: 500;
+  font-size: 14px;
+  background-color: var(--md-ref-palette-primary50);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.video-js-player .error-modal button:hover, .video-js-player-fullscreen .error-modal button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.video-js-player .current-program-info-container, .video-js-player-fullscreen .current-program-info-container {
+  width: 95%;
+  height: 150px;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  z-index: 9999;
+}
+.video-js-player .current-program-info-container .current-program-info, .video-js-player-fullscreen .current-program-info-container .current-program-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.video-js-player .current-program-info-container .current-program-info .image-and-info, .video-js-player-fullscreen .current-program-info-container .current-program-info .image-and-info {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.video-js-player .current-program-info-container .current-program-info .image-and-info img, .video-js-player-fullscreen .current-program-info-container .current-program-info .image-and-info img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+.video-js-player .current-program-info-container .current-program-info .image-and-info .current-program-channel-details, .video-js-player-fullscreen .current-program-info-container .current-program-info .image-and-info .current-program-channel-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.video-js-player .current-program-info-container .current-program-info .image-and-info .current-program-channel-details .current-channel, .video-js-player-fullscreen .current-program-info-container .current-program-info .image-and-info .current-program-channel-details .current-channel {
+  font-size: 25px;
+  color: white;
+  font-size: bolder;
+}
+.video-js-player .current-program-info-container .current-program-info .image-and-info .current-program-channel-details .current-program-info, .video-js-player-fullscreen .current-program-info-container .current-program-info .image-and-info .current-program-channel-details .current-program-info {
+  color: white;
+  font-size: 17px;
+  font-weight: 200;
+}
+.video-js-player .current-program-info-container .current-program-timing p, .video-js-player-fullscreen .current-program-info-container .current-program-timing p {
+  color: white;
+}
+.video-js-player .live-full-screen-gradient, .video-js-player-fullscreen .live-full-screen-gradient {
+  width: 100%;
+  height: 250px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  background: linear-gradient(to top, black, transparent);
+}
+.video-js-player .back-btn, .video-js-player-fullscreen .back-btn {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+.video-js-player .back-btn:hover, .video-js-player-fullscreen .back-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.video-js-player .vjs-control-bar, .video-js-player-fullscreen .vjs-control-bar {
+  display: none !important;
+  background-color: transparent;
+}
+.video-js-player .vjs-control-bar button, .video-js-player .vjs-control-bar .vjs-volume-panel, .video-js-player .vjs-control-bar .vjs-current-time, .video-js-player .vjs-control-bar .vjs-time-control, .video-js-player .vjs-control-bar .vjs-duration, .video-js-player-fullscreen .vjs-control-bar button, .video-js-player-fullscreen .vjs-control-bar .vjs-volume-panel, .video-js-player-fullscreen .vjs-control-bar .vjs-current-time, .video-js-player-fullscreen .vjs-control-bar .vjs-time-control, .video-js-player-fullscreen .vjs-control-bar .vjs-duration {
+  display: none;
+}
+.video-js-player .vjs-control-bar .vjs-progress-control, .video-js-player-fullscreen .vjs-control-bar .vjs-progress-control {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  height: 50px;
+}
+.video-js-player .vjs-control-bar .vjs-progress-control .vjs-progress-holder, .video-js-player-fullscreen .vjs-control-bar .vjs-progress-control .vjs-progress-holder {
+  height: 12px;
+  box-shadow: none;
+}
+.video-js-player .vjs-control-bar .vjs-progress-control .vjs-time-tooltip, .video-js-player-fullscreen .vjs-control-bar .vjs-progress-control .vjs-time-tooltip {
+  font-size: 10px;
+}
+.video-js-player .vjs-control-bar .vjs-progress-control .vjs-play-progress, .video-js-player-fullscreen .vjs-control-bar .vjs-progress-control .vjs-play-progress {
+  background-color: var(--md-source);
+}
+.video-js-player .vjs-control-bar .vjs-progress-control .vjs-play-progress::before, .video-js-player-fullscreen .vjs-control-bar .vjs-progress-control .vjs-play-progress::before {
+  font-size: 28px;
+}
+.video-js-player .vjs-header, .video-js-player-fullscreen .vjs-header {
+  background: linear-gradient(to bottom, black, transparent);
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+.video-js-player .vjs-header .channel-name, .video-js-player-fullscreen .vjs-header .channel-name {
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.video-js-player .vjs-header .live-indicator, .video-js-player-fullscreen .vjs-header .live-indicator {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  color: white;
+  background: rgba(131, 131, 131, 0.6);
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  padding: 10px;
+}
+.video-js-player .vjs-header .live-indicator .dot, .video-js-player-fullscreen .vjs-header .live-indicator .dot {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0;
+}
+.video-js-player .vjs-header .live-indicator p, .video-js-player-fullscreen .vjs-header .live-indicator p {
+  margin: 0;
+  padding: 0;
+}
+.video-js-player .vjs-header .live-indicator :-webkit-full-screen, .video-js-player-fullscreen .vjs-header .live-indicator :-webkit-full-screen {
+  right: 10px;
+}
+.video-js-player .vjs-header .live-indicator :fullscreen, .video-js-player-fullscreen .vjs-header .live-indicator :fullscreen {
+  right: 10px;
+}
+.video-js-player .play-pause-btn, .video-js-player-fullscreen .play-pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+}
+.video-js-player .play-pause-btn:hover, .video-js-player-fullscreen .play-pause-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.video-js-player .vjs-player-btns-container, .video-js-player-fullscreen .vjs-player-btns-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding-bottom: 10px;
+  background: linear-gradient(to top, black, transparent);
+}
+.video-js-player .vjs-player-btns-container .option, .video-js-player-fullscreen .vjs-player-btns-container .option {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  align-items: center;
+}
+.video-js-player .vjs-player-btns-container .option .full-screen-icon, .video-js-player-fullscreen .vjs-player-btns-container .option .full-screen-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  color: white;
+  width: 30px;
+  height: 50px;
+}
+.video-js-player .vjs-player-btns-container .option img, .video-js-player-fullscreen .vjs-player-btns-container .option img {
+  width: 20px;
+  height: 20px;
+}
+.video-js-player .vjs-player-btns-container .option p, .video-js-player-fullscreen .vjs-player-btns-container .option p {
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+}
+.video-js-player .vjs-player-btns-container .option:nth-child(1) img, .video-js-player-fullscreen .vjs-player-btns-container .option:nth-child(1) img {
+  transform: rotate(180deg);
+}
+.video-js-player .vjs-player-btns-container .option:hover, .video-js-player-fullscreen .vjs-player-btns-container .option:hover {
+  cursor: pointer;
+}
+
+.video-js-player-fullscreen {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: black;
+}
+.video-js-player-fullscreen .video-js .vjs-tech {
+  height: 100vh !important;
+}
+.video-js-player-fullscreen .vjs-header .live-indicator {
+  left: unset;
+  right: 80px;
+}
+.video-js-player-fullscreen .vjs-control-bar .vjs-progress-control {
+  position: fixed;
+  bottom: 70px;
+}
+.video-js-player-fullscreen .play-pause-btn {
+  width: 90px;
+  height: 90px;
+}
+.video-js-player-fullscreen .vjs-player-btns-container .option img {
+  width: 35px;
+  height: 35px;
+}
+.video-js-player-fullscreen .vjs-player-btns-container .option p {
+  padding: 5px;
+  font-size: 17px;
+}
+
+.vjs-big-play-centered {
+  height: 100% !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .video-js-player {
+    height: 250px;
+  }
+  .video-js-player .vjs-player-btns-container .option p {
+    display: none;
+  }
+  .video-js-player .vjs-header .channel-name {
+    font-size: 15px;
+  }
+  .video-js-player .vjs-header .live-indicator {
+    font-size: 12px;
+    padding: 7px;
+  }
+  .video-js-player .vjs-header .live-indicator .dot {
+    width: 7px;
+    height: 7px;
+  }
+}/*# sourceMappingURL=styles.css.map */

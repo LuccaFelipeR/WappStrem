@@ -1,0 +1,279 @@
+
+@import "../../../css/token.css";
+.profile-drop-and-header-container .invalid-user-popup-container {
+  background-color: white;
+  z-index: 99999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  padding: 40px;
+  padding-bottom: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(90, 90, 90);
+}
+.profile-drop-and-header-container .invalid-user-popup-container .cross-icon {
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+}
+.profile-drop-and-header-container .invalid-user-popup-container .invalid-title {
+  color: #595959;
+  font-size: 25px;
+  font-weight: 500;
+}
+.profile-drop-and-header-container .invalid-user-popup-container .ok-btn {
+  color: white;
+  background: #615DFC;
+  border: none;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+.profile-drop-and-header-container .invalid-user-popup-container .ok-btn:hover {
+  cursor: pointer;
+}
+.profile-drop-and-header-container .invalid-user-popup-container .ok-btn:nth-child(1) {
+  background-color: gray;
+}
+.profile-drop-and-header-container .mainHeader {
+  transition: 0.4s;
+  height: 100px;
+}
+.profile-drop-and-header-container .mainHeader .mainMenu #search-input-container {
+  display: inline-flex;
+}
+.profile-drop-and-header-container .mainHeader .mainMenu #search-input-container .search-input {
+  padding: 10px;
+  border: 2px solid #615DFC;
+  background-color: transparent;
+  border-radius: 5px;
+  color: black;
+  width: 100px;
+  transition: 0.4s;
+  letter-spacing: 1px;
+  caret-color: white;
+}
+.profile-drop-and-header-container .mainHeader .mainMenu #search-input-container .search-input:hover {
+  width: 250px;
+}
+.profile-drop-and-header-container .mainHeader .mainMenu #search-input-container .search-icon {
+  color: #615DFC;
+  font-size: 30px;
+  margin-top: 5px;
+}
+.profile-drop-and-header-container .mainHeader .mainMenu #search-input-container .search-icon:hover {
+  cursor: pointer;
+}
+.profile-drop-and-header-container .scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+.profile-drop-and-header-container .search-input-container {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: 0.4s;
+  display: none;
+}
+.profile-drop-and-header-container .search-input-container .search-input {
+  padding: 10px;
+  border: 2px solid #615DFC;
+  background-color: transparent;
+  border-radius: 5px;
+  color: black;
+  width: 100%;
+  transition: 0.4s;
+  letter-spacing: 1px;
+}
+.profile-drop-and-header-container .search-input-container ::-moz-placeholder {
+  color: black;
+  opacity: 0.7;
+}
+.profile-drop-and-header-container .search-input-container ::placeholder {
+  color: black;
+  opacity: 0.7;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .change-theme {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding-bottom: 20px;
+  z-index: 999999999;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options {
+  transition: 0.4s;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .options-head {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .options-head svg {
+  transition: 0.4s;
+  stroke: black;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .options-head svg:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .options-head path {
+  stroke: black;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .options-head h3 {
+  color: black;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.4s;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option .parent-option-title {
+  font-size: 18px !important;
+  font-weight: 500;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option .left {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option .left p {
+  color: black;
+  font-size: 15px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option .left svg path {
+  stroke: black;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option .right {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option .right .content {
+  font-size: 14px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option img {
+  width: 15px;
+  height: 15px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option .right-arrow {
+  width: 15px;
+  height: 15px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option .right-arrow path {
+  stroke: black;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .option:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.4s;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option .parent-option-title {
+  font-size: 18px !important;
+  font-weight: 500;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option .left {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option .left p {
+  color: black;
+  font-size: 15px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option .left svg path {
+  stroke: black;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option .right {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option .right .content {
+  font-size: 14px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option img {
+  width: 15px;
+  height: 15px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option .right-arrow {
+  width: 15px;
+  height: 15px;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option .right-arrow path {
+  stroke: black;
+}
+.profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.profile-drop-and-header-container .closeProfile {
+  z-index: 99999;
+}
+
+.color-options {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+.color-options div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.4s;
+  border: 1px solid lightgray;
+}
+.color-options div:hover {
+  cursor: pointer;
+  border-color: black;
+}
+.color-options div:nth-child(1) {
+  background: linear-gradient(to bottom, #B32100, rgb(180, 59, 32));
+}
+.color-options div:nth-child(2) {
+  background: linear-gradient(to bottom, #615DFC, #7773f5);
+}
+.color-options div:nth-child(3) {
+  background: linear-gradient(to bottom, #4fa162, #64c77b);
+}
+
+.cancel-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .profile-drop-and-header-container .search-input-container {
+    display: flex;
+  }
+  .profile-drop-and-header-container .mainHeader .mainMenu #search-input-container {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

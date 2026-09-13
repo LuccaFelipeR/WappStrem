@@ -1,0 +1,114 @@
+
+@import "../../../../../css/token.css";
+.more-like-this-container {
+  padding-left: 80px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+.more-like-this-container .swiper-wrapper {
+  display: flex;
+}
+.more-like-this-container .h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  padding-left: 10px;
+}
+.more-like-this-container .item {
+  position: relative;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.2s all linear;
+  border: transparent solid 4px;
+  width: 180px;
+  height: 270px;
+}
+.more-like-this-container .item .caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.more-like-this-container .item .caption:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 63.02%);
+  visibility: hidden;
+}
+.more-like-this-container .item .caption > * {
+  z-index: 1;
+  position: relative;
+  color: #ffffff;
+}
+.more-like-this-container .item .caption .control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more-like-this-container .item .caption .control .count {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--md-ref-palette-primary30);
+  color: #ffffff;
+  border-radius: 6px;
+}
+.more-like-this-container .item .caption .info {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 5px;
+  visibility: hidden;
+}
+.more-like-this-container .item .caption .h2 {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  visibility: hidden;
+}
+.more-like-this-container .item .thumb {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+.more-like-this-container .item .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.more-like-this-container .item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+  border-color: #ffffff;
+  z-index: 999;
+}
+.more-like-this-container .item:hover .caption:after,
+.more-like-this-container .item:hover .caption .info,
+.more-like-this-container .item:hover .caption .h2 {
+  visibility: visible;
+}
+
+@media all and (max-width: 1500px) {
+  .more-like-this-container {
+    padding-left: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

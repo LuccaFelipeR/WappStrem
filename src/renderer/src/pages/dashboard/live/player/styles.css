@@ -1,0 +1,405 @@
+
+@import "../../../../css/token.css";
+.live-player,
+.live-player-fullscreen {
+  height: 100%;
+}
+.live-player p, .live-player h2,
+.live-player-fullscreen p,
+.live-player-fullscreen h2 {
+  margin: 0;
+  padding: 0;
+}
+.live-player .progress-bar, .live-player .progress-bar-wo-fullscreen,
+.live-player-fullscreen .progress-bar,
+.live-player-fullscreen .progress-bar-wo-fullscreen {
+  width: 100%;
+  height: 9px;
+  background-color: lightgray;
+  margin-top: 15px;
+  position: relative;
+  border-radius: 3px;
+  z-index: 999;
+}
+.live-player .progress-bar .completed-progress, .live-player .progress-bar-wo-fullscreen .completed-progress,
+.live-player-fullscreen .progress-bar .completed-progress,
+.live-player-fullscreen .progress-bar-wo-fullscreen .completed-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--md-source);
+  border-radius: 3px;
+}
+.live-player .progress-bar-wo-fullscreen,
+.live-player-fullscreen .progress-bar-wo-fullscreen {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 95%;
+  transform: translateX(-50%);
+}
+.live-player .current-program-timings,
+.live-player-fullscreen .current-program-timings {
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  z-index: 999;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(-50%);
+}
+.live-player .current-program-timings p,
+.live-player-fullscreen .current-program-timings p {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+.live-player .back-btn,
+.live-player .play-pause-btn,
+.live-player-fullscreen .back-btn,
+.live-player-fullscreen .play-pause-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+.live-player .back-btn:hover,
+.live-player .play-pause-btn:hover,
+.live-player-fullscreen .back-btn:hover,
+.live-player-fullscreen .play-pause-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.live-player .back-btn,
+.live-player-fullscreen .back-btn {
+  z-index: 99;
+}
+.live-player #player-wrapperr .play-pause-btn,
+.live-player-fullscreen #player-wrapperr .play-pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+}
+.live-player #player-wrapperr .fp-bar > .fp-progress.animated,
+.live-player-fullscreen #player-wrapperr .fp-bar > .fp-progress.animated {
+  background: var(--md-source);
+}
+.live-player #player-wrapperr .fp-bar > .fp-buffer,
+.live-player-fullscreen #player-wrapperr .fp-bar > .fp-buffer {
+  width: 100% !important;
+}
+.live-player #player-wrapperr .channel-name,
+.live-player-fullscreen #player-wrapperr .channel-name {
+  position: absolute;
+  top: -20px;
+  padding-top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 100px;
+  font-size: 18px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+}
+.live-player #player-wrapperr .fp-play,
+.live-player #player-wrapperr .fp-pause,
+.live-player-fullscreen #player-wrapperr .fp-play,
+.live-player-fullscreen #player-wrapperr .fp-pause {
+  display: none;
+}
+.live-player #player-wrapperr .fp-controls,
+.live-player-fullscreen #player-wrapperr .fp-controls {
+  display: none !important;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+.live-player #player-wrapperr .fp-controls .fp-volume,
+.live-player-fullscreen #player-wrapperr .fp-controls .fp-volume {
+  display: none;
+}
+.live-player #player-wrapperr .fp-controls .fp-icon,
+.live-player-fullscreen #player-wrapperr .fp-controls .fp-icon {
+  display: none !important;
+}
+.live-player #player-wrapperr .fp-header,
+.live-player-fullscreen #player-wrapperr .fp-header {
+  display: none !important;
+}
+.live-player #player-wrapperr .live-bottom-controls,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-left: 20px;
+  justify-content: space-around;
+  width: 100%;
+  transform: translateX(-50%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  height: 100px;
+  z-index: 1;
+}
+.live-player #player-wrapperr .live-bottom-controls .full-screen-icon-container,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls .full-screen-icon-container {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  cursor: pointer;
+}
+.live-player #player-wrapperr .live-bottom-controls .full-screen-icon-container .full-screen-icon,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls .full-screen-icon-container .full-screen-icon {
+  width: 30px;
+  height: 30px;
+  z-index: 999999;
+  color: white;
+}
+.live-player #player-wrapperr .live-bottom-controls .option,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls .option {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  align-items: center;
+}
+.live-player #player-wrapperr .live-bottom-controls .option img,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls .option img {
+  width: 15px;
+  height: 15px;
+}
+.live-player #player-wrapperr .live-bottom-controls .option p,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls .option p {
+  font-weight: 500;
+  color: white;
+}
+.live-player #player-wrapperr .live-bottom-controls .option:nth-child(1) img,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls .option:nth-child(1) img {
+  transform: rotate(180deg);
+}
+.live-player #player-wrapperr .live-bottom-controls .option:hover,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls .option:hover {
+  cursor: pointer;
+}
+.live-player #player-wrapperr .live-bottom-controls-fullscreen,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls-fullscreen {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-left: 20px;
+  justify-content: space-between;
+  width: 95%;
+  transform: translateX(-50%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  height: 100px;
+  z-index: 999999;
+}
+.live-player #player-wrapperr .live-bottom-controls-fullscreen .full-screen-icon-container,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls-fullscreen .full-screen-icon-container {
+  position: fixed;
+  right: 0px;
+  bottom: 15px;
+  cursor: pointer;
+}
+.live-player #player-wrapperr .live-bottom-controls-fullscreen .full-screen-icon-container .full-screen-icon,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls-fullscreen .full-screen-icon-container .full-screen-icon {
+  width: 25px;
+  height: 25px;
+}
+.live-player #player-wrapperr .live-bottom-controls-fullscreen .option,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls-fullscreen .option {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  align-items: center;
+}
+.live-player #player-wrapperr .live-bottom-controls-fullscreen .option img,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls-fullscreen .option img {
+  width: 30px;
+  height: 30px;
+}
+.live-player #player-wrapperr .live-bottom-controls-fullscreen .option p,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls-fullscreen .option p {
+  font-weight: 500;
+  color: white;
+  font-size: 17px;
+}
+.live-player #player-wrapperr .live-bottom-controls-fullscreen .option:nth-child(1) img,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls-fullscreen .option:nth-child(1) img {
+  transform: rotate(180deg);
+}
+.live-player #player-wrapperr .live-bottom-controls-fullscreen .option:hover,
+.live-player-fullscreen #player-wrapperr .live-bottom-controls-fullscreen .option:hover {
+  cursor: pointer;
+}
+.live-player #player-wrapperr .error-modal,
+.live-player-fullscreen #player-wrapperr .error-modal {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.live-player #player-wrapperr .error-modal .back-btn,
+.live-player-fullscreen #player-wrapperr .error-modal .back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999999;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+.live-player #player-wrapperr .error-modal .back-btn:hover,
+.live-player-fullscreen #player-wrapperr .error-modal .back-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.live-player #player-wrapperr .error-modal p,
+.live-player-fullscreen #player-wrapperr .error-modal p {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+.live-player #player-wrapperr .error-modal button,
+.live-player-fullscreen #player-wrapperr .error-modal button {
+  font-weight: 500;
+  font-size: 14px;
+  background-color: var(--md-ref-palette-primary50);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.live-player #player-wrapperr .error-modal button:hover,
+.live-player-fullscreen #player-wrapperr .error-modal button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.live-player #player-wrapperr .current-program-info-container,
+.live-player-fullscreen #player-wrapperr .current-program-info-container {
+  width: 95%;
+  height: 150px;
+  position: fixed;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  z-index: 9999;
+}
+.live-player #player-wrapperr .current-program-info-container .current-program-info,
+.live-player-fullscreen #player-wrapperr .current-program-info-container .current-program-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.live-player #player-wrapperr .current-program-info-container .current-program-info .image-and-info,
+.live-player-fullscreen #player-wrapperr .current-program-info-container .current-program-info .image-and-info {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.live-player #player-wrapperr .current-program-info-container .current-program-info .image-and-info img,
+.live-player-fullscreen #player-wrapperr .current-program-info-container .current-program-info .image-and-info img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+.live-player #player-wrapperr .current-program-info-container .current-program-info .image-and-info .current-program-channel-details,
+.live-player-fullscreen #player-wrapperr .current-program-info-container .current-program-info .image-and-info .current-program-channel-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.live-player #player-wrapperr .current-program-info-container .current-program-info .image-and-info .current-program-channel-details .current-channel,
+.live-player-fullscreen #player-wrapperr .current-program-info-container .current-program-info .image-and-info .current-program-channel-details .current-channel {
+  font-size: 25px;
+  color: white;
+  font-size: bolder;
+}
+.live-player #player-wrapperr .current-program-info-container .current-program-info .image-and-info .current-program-channel-details .current-program-info,
+.live-player-fullscreen #player-wrapperr .current-program-info-container .current-program-info .image-and-info .current-program-channel-details .current-program-info {
+  color: white;
+  font-size: 17px;
+  font-weight: 200;
+}
+.live-player #player-wrapperr .current-program-info-container .current-program-timing p,
+.live-player-fullscreen #player-wrapperr .current-program-info-container .current-program-timing p {
+  color: white;
+}
+.live-player #player-wrapperr .current-program-info-container .progress-bar,
+.live-player-fullscreen #player-wrapperr .current-program-info-container .progress-bar {
+  width: 100%;
+  height: 9px;
+  background-color: lightgray;
+  margin-top: 15px;
+  z-index: 999;
+  position: relative;
+}
+.live-player #player-wrapperr .current-program-info-container .progress-bar .completed-progress,
+.live-player-fullscreen #player-wrapperr .current-program-info-container .progress-bar .completed-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--md-source);
+}
+.live-player #player-wrapperr .live-full-screen-gradient,
+.live-player-fullscreen #player-wrapperr .live-full-screen-gradient {
+  width: 100%;
+  height: 250px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  background: linear-gradient(to top, black, transparent);
+}
+
+.live-player-fullscreen {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: black;
+}
+.live-player-fullscreen #player-wrapperr .fp-controls {
+  bottom: 80px;
+}
+
+@media only screen and (max-width: 900px) {
+  .live-player {
+    height: 250px;
+  }
+}
+@media all and (display-mode: fullscreen) {
+  .live-player #player-wrapperr .fp-controls {
+    bottom: 90px;
+  }
+}/*# sourceMappingURL=styles.css.map */

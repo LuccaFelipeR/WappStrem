@@ -1,0 +1,1046 @@
+@import url(./token.css);
+
+
+body:not(.light) {
+    background-color: var(--md-sys-color-background-dark)
+}
+
+body:not(.light) *::-webkit-scrollbar {
+    width: 4px;
+    height: 4px
+}
+
+body:not(.light) *::-webkit-scrollbar-track {
+    background: var(--md-sys-color-on-surface-dark)
+}
+
+body:not(.light) *::-webkit-scrollbar-thumb {
+    background: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) ::-webkit-scrollbar-thumb:hover {
+    background: var(--md-ref-palette-primary50)
+}
+
+body:not(.light)::-webkit-scrollbar {
+    width: 4px;
+    height: 4px
+}
+
+body:not(.light)::-webkit-scrollbar-track {
+    background: var(--md-sys-color-on-surface-dark)
+}
+
+body:not(.light)::-webkit-scrollbar-thumb {
+    background: var(--md-ref-palette-primary50)
+}
+
+body:not(.light)::-webkit-scrollbar-thumb:hover {
+    background: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .scrolled{
+    background-color: var(--md-sys-color-background-dark);
+}
+body:not(.light) .mainHeader .brandName img path:last-child,
+body:not(.light) .mainHeader .brandName svg path:last-child {
+    fill: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .mainHeader .mainMenu a {
+    color: #fff;
+    border-bottom: 4px solid transparent
+}
+
+body:not(.light) .mainHeader .mainMenu a:hover:not(.active) {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+body:not(.light) .more-like-this-container .h3 {
+    color: white;
+}
+
+body:not(.light) .profile-drop-and-header-container .profileDrop .profileOption .setting-options .options-head h3 {
+    color: white;
+}
+
+body:not(.light) .profile-drop-and-header-container .profileDrop .profileOption .setting-options .option p {
+    color: white;
+}
+
+body:not(.light) .profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option p {
+    color: white;
+}
+
+body:not(.light) .profile-drop-and-header-container .profileDrop .profileOption .setting-options .options-head svg path {
+    stroke: white;
+}
+
+body:not(.light) .profile-drop-and-header-container .profileDrop .profileOption .setting-options .options-head svg {
+    stroke: white;
+}
+
+body:not(.light) .profile-drop-and-header-container .profileDrop .profileOption .setting-options .option svg path {
+    stroke: white;
+}
+
+
+body:not(.light) .profile-drop-and-header-container .profileDrop .profileOption .setting-options .parent-option .option svg path {
+    stroke: white;
+}
+
+body:not(.light) .searched-items-container .search-input-container .search-input{
+    caret-color: white;
+    color: white;
+}
+
+body:not(.light) .searched-items-container .no-data-found-container h2{
+    color: white;
+}
+
+body:not(.light) .more-like-this-container .h3 {
+    color: white;
+}
+
+body:not(.light) .mainHeader .mainMenu a.active {
+    border-bottom-color: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .searched-items-container .tabs-container .tab {
+    color: white;
+}
+
+body:not(.light) .profileDrop .profileOption {
+    background-color: var(--md-sys-color-surface-dark);
+    box-shadow: 0px 0px 60px 0px #0E1323;
+    z-index: 99999999999 !important;
+}
+
+body:not(.light) .profileDrop .profileOption .head {
+    color: #fff
+}
+
+body:not(.light) .profileDrop .profileOption>.text {
+    color: #fff
+}
+
+body:not(.light) .profileDrop .profileOption>.text a {
+    color: #fff
+}
+
+body:not(.light) .profileDrop .profileOption>.widget span b {
+    color: var(--md-ref-palette-neutral90)
+}
+
+body:not(.light) .profileDrop .profileOption .widget {
+    background-color: var(--md-sys-color-on-surface-dark);
+    color: #fff
+}
+
+body:not(.light) .profileDrop .profileOption .widget:hover {
+    background-color: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .liveTv>.panel .pHead {
+    border-bottom: var(--md-sys-color-on-surface-dark) solid 1px
+}
+
+body:not(.light) .liveTv>.panel .pHead .h5 {
+    color: #fff
+}
+
+body:not(.light) .liveTv>.panel .pHead .controls>svg path {
+    fill: var(--md-sys-color-outline-dark)
+}
+
+body:not(.light) .liveTv>.panel .pHead .controls input {
+    color: var(--md-sys-color-on-surface-variant-dark);
+    background-color: transparent;
+    border: var(--md-sys-color-on-surface-dark) solid 2px
+}
+
+body:not(.light) .liveTv>.panel .pHead .controls input::-webkit-input-placeholder {
+    color: var(--md-sys-color-outline-dark)
+}
+
+body:not(.light) .liveTv>.panel .pHead .controls input::-moz-placeholder {
+    color: var(--md-sys-color-outline-dark)
+}
+
+body:not(.light) .liveTv>.panel .pHead .controls input:-ms-input-placeholder {
+    color: var(--md-sys-color-outline-dark)
+}
+
+body:not(.light) .liveTv>.panel .pHead .controls input:-moz-placeholder {
+    color: var(--md-sys-color-outline-dark)
+}
+
+body:not(.light) .liveTv>.panel.tvCategory {
+    background-color: var(--md-sys-color-surface-dark)
+}
+
+body:not(.light) .liveTv>.panel.tvCategory .pBody>a {
+    border: transparent solid 1px;
+    color: #fff
+}
+
+body:not(.light) .liveTv>.panel.tvCategory .pBody>a:hover,
+body:not(.light) .liveTv>.panel.tvCategory .pBody>a.active {
+    background-color: var(--md-ref-palette-primary50);
+    border-color: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .liveTv>.panel.tvList {
+    background-color: var(--md-sys-color-surface-dark)
+}
+
+body:not(.light) .liveTv>.panel.tvList .pBody .list:before {
+    color: #fff
+}
+
+body:not(.light) .liveTv>.panel.tvList .pBody .list .channelList .info {
+    color: #fff
+}
+
+body:not(.light) .liveTv>.panel.tvList .pBody .list .channelList .info a {
+    color: #fff
+}
+
+body:not(.light) .liveTv>.panel.steamDetail .videoPlay {
+    background-color: var(--md-ref-palette-secondary5);
+}
+
+body:not(.light) .liveTv>.panel.steamDetail>.panel {
+    background-color: var(--md-sys-color-surface-dark)
+}
+
+body:not(.light) .liveTv>.panel.steamDetail>.panel .pBody span {
+    color: #fff
+}
+
+body:not(.light) .login .loginInner .infoSlide .indicators .indicator{
+    background-color: white;
+}
+
+body:not(.light) .login>.terms {
+    color: var(--md-ref-palette-neutral90);
+}
+
+body:not(.light) .login>.terms a {
+    color: var(--md-ref-palette-neutral90)
+}
+
+body:not(.light) .login .loginInner {
+    border: var(--md-sys-color-outline-variant-dark) solid 1px
+}
+
+body:not(.light) .login .infoSlide .item .h3 {
+    color: #fff
+}
+
+body:not(.light) .login .infoSlide .owl-dots button {
+    background-color: var(--md-sys-color-on-surface-dark)
+}
+
+body:not(.light) .login .infoSlide .owl-dots button.active {
+    background-color: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .login .loginForm {
+    background-color: var(--md-sys-color-surface-dark);
+    margin-bottom: 1px;
+}
+
+body:not(.light) .login .loginForm .formGroup .showPassword path {
+    fill: var(--md-sys-color-outline-variant-dark)
+}
+
+body:not(.light) .login .loginForm .formGroup>svg path {
+    fill: var(--md-sys-color-outline-variant-dark)
+}
+
+body:not(.light) .login .loginForm .formGroup input {
+    color: var(--md-sys-color-on-surface-variant-dark);
+    border: var(--md-sys-color-on-surface-dark) solid 2px;
+    background-color: transparent
+}
+
+body:not(.light) .login .loginForm .formGroup input::-webkit-input-placeholder {
+    color: var(--md-sys-color-outline-dark)
+}
+
+body:not(.light) .login .loginForm .formGroup input::-moz-placeholder {
+    color: var(--md-sys-color-on-surface-dark)
+}
+
+body:not(.light) .login .loginForm .formGroup input:-ms-input-placeholder {
+    color: var(--md-sys-color-on-surface-dark)
+}
+
+body:not(.light) .login .loginForm .formGroup input:-moz-placeholder {
+    color: var(--md-sys-color-on-surface-dark)
+}
+
+body:not(.light) .login .loginForm .formGroup input:focus {
+    border-color: var(--md-sys-color-outline-variant-dark)
+}
+
+body:not(.light) .login .loginForm .btn {
+    background-color: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .mainBanner .item .thumb:before,
+body:not(.light) .mainBanner .item .thumb:after {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 7%, transparent 100%)
+}
+
+body:not(.light) .mainBanner .item .thumb:after {
+    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.9) 93%, rgba(0, 0, 0, 0.9) 100%)
+}
+
+body:not(.light) .mainBanner .item .thumb .effectGrad:before,
+body:not(.light) .mainBanner .item .thumb .effectGrad:after {
+    background: linear-gradient(to bottom, #000 0%, #000 7%, transparent 100%)
+}
+
+body:not(.light) .mainBanner .item .thumb .effectGrad:after {
+    background: linear-gradient(to bottom, transparent 0%, #000 93%, #000 100%)
+}
+
+body:not(.light) .mainBanner .item .info .h2 {
+    color: #fff
+}
+
+body:not(.light) .mainBanner .item .info .playInfo {
+    color: #fff
+}
+
+body:not(.light) .mainBanner .item .info .playInfo .date {
+    background-color: #274542;
+    color: #60E7BB
+}
+
+body:not(.light) .mainBanner .item .info .playInfo .rating {
+    background-color: var(--md-ref-palette-primary40)
+}
+
+body:not(.light) .mainBanner .item .info .text {
+    color: #e2e1e1
+}
+
+body:not(.light) .mainBanner .item .info .btnGroup select {
+    background-color: var(--md-ref-palette-primary30);
+    color: #fff;
+    border: var(--md-ref-palette-primary60) solid 2px
+}
+
+body:not(.light) .mainBanner .item .info .btnGroup select:hover {
+    border-color: #fff;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3)
+}
+
+body:not(.light) .mainBanner .owl-dots button {
+    background-color: var(--md-ref-palette-primary80) !important
+}
+
+body:not(.light) .mainBanner .owl-dots button.active {
+    background-color: var(--md-ref-palette-primary50) !important
+}
+
+body:not(.light) .category .h3 {
+    color: #fff
+}
+
+body:not(.light) .category .item {
+    border: transparent solid 4px
+}
+
+body:not(.light) .category .item .caption:after {
+    z-index: 1;
+    background: linear-gradient(180deg, transparent 0%, #000 63.02%)
+}
+
+body:not(.light) .category .item .caption>* {
+    color: #fff
+}
+
+body:not(.light) .category .item .caption .control .count {
+    background-color: var(--md-ref-palette-primary50);
+    color: #fff
+}
+
+body:not(.light) .category .item .caption .h2 {
+    color: #fff;
+    z-index: 9;
+}
+
+body:not(.light) .category .item:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    border-color: #fff
+}
+
+body:not(.light) .otherOptions a {
+    color: #fff
+}
+
+body:not(.light) .castCrew .h3 {
+    color: #fff
+}
+
+body:not(.light) .castCrew .item .thumb {
+    border: 4px solid transparent
+}
+
+body:not(.light) .castCrew .item .h4 {
+    color: #fff
+}
+
+body:not(.light) .castCrew .item:hover .thumb {
+    -webkit-box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+    border-color: #fff
+}
+
+body:not(.light) .profileSection>img path:last-child,
+body:not(.light) .profileSection>svg path:last-child {
+    fill: var(--md-ref-palette-primary40)
+}
+
+body:not(.light) .profileSection .profileList a {
+    color: #fff
+}
+
+body:not(.light) .profileSection .profileList a .thumb {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+body:not(.light) .profileSection .profileList a.add .thumb {
+    background-color: var(--md-sys-color-on-surface-dark)
+}
+
+body:not(.light) .profileSection .profileList a.add svg circle {
+    fill: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .profileSection .profileList a:hover .thumb {
+    border: var(--md-ref-palette-primary50) solid 4px
+}
+
+body:not(.light) .profileSection .profileList .single-profile {
+    color: #fff
+}
+
+body:not(.light) .profileSection .profileList .single-profile .thumb {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+body:not(.light) .profileSection .profileList .single-profile.add .thumb {
+    background-color: var(--md-sys-color-on-surface-dark)
+}
+
+body:not(.light) .profileSection .profileList .single-profile.add svg circle {
+    fill: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .profileSection .profileList .single-profile:hover .thumb {
+    border: var(--md-ref-palette-primary50) solid 4px
+}
+
+body:not(.light) .seriesList .h3 {
+    color: #fff
+}
+
+body:not(.light) .seriesList .h3 b {
+    color: #676767
+}
+
+body:not(.light) .seriesList .list {
+    border: transparent solid 2px
+}
+
+body:not(.light) .seriesList .list:hover {
+    border-color: #fff
+}
+
+body:not(.light) .seriesList .list .listLink {
+    color: #fff
+}
+
+body:not(.light) .seriesList .list .downloadBtn {
+    background-color: var(--md-source)
+}
+
+body:not(.light) .seriesList .list .downloadBtn svg path {
+    fill: #fff
+}
+
+body:not(.light) .seriesList .list .info .h4 {
+    color: #fff
+}
+body:not(.light) .seriesList .list .text {
+    color: #fff
+}
+
+
+
+body:not(.light) .splash>svg path:last-child,
+body:not(.light) .splash img path:last-child {
+    fill: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .splash .playList a {
+    border: solid var(--md-ref-palette-primary50) 2px;
+    color: #fff
+}
+
+body:not(.light) .splash .list-playlists p{
+    color: white;
+}
+
+body:not(.light) .splash .list-playlists .icon{
+    color: var(--md-source);
+}
+
+body:not(.light) .splash .playList a:hover {
+    border-color: var(--md-sys-color-outline-variant-dark);
+    background-color: var(--md-ref-palette-primary40)
+}
+
+body:not(.light) .splash .playList a span.thumb {
+    background-color: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .splash>a {
+    color: var(--md-ref-palette-primary50)
+}
+body:not(.light) .splash .terms-and-conditions{
+    color: white;
+}
+
+body:not(.light) .splash .terms-and-conditions a{
+    color: var(--md-ref-palette-primary50)
+}
+
+body:not(.light) .splash .terms-and-conditions{
+    color: var(--md-ref-palette-primary50)
+}
+
+body.light {
+    background-color: var(--md-sys-color-background-light)
+}
+
+body.light *::-webkit-scrollbar {
+    width: 4px;
+    height: 4px
+}
+
+body.light *::-webkit-scrollbar-track {
+    background: var(--md-sys-color-on-surface-light)
+}
+
+body.light *::-webkit-scrollbar-thumb {
+    background: var(--md-ref-palette-primary50)
+}
+
+body.light ::-webkit-scrollbar-thumb:hover {
+    background: var(--md-ref-palette-primary50)
+}
+
+body.light::-webkit-scrollbar {
+    width: 4px;
+    height: 4px
+}
+
+body.light::-webkit-scrollbar-track {
+    background: var(--md-sys-color-on-surface-light)
+}
+
+body.light::-webkit-scrollbar-thumb {
+    background: var(--md-ref-palette-primary50)
+}
+
+body.light::-webkit-scrollbar-thumb:hover {
+    background: var(--md-ref-palette-primary50)
+}
+
+body.light .mainHeader .brandName img path,
+body.light .mainHeader .brandName svg path {
+    fill: var(--md-sys-color-surface-container-low-dark)
+}
+
+body.light .mainHeader .brandName img path:last-child,
+body.light .mainHeader .brandName svg path:last-child {
+    fill: var(--md-ref-palette-primary40)
+}
+
+body.light .mainHeader .mainMenu a {
+    color: #000;
+    border-bottom: 4px solid transparent
+}
+
+body.light .mainHeader .mainMenu a:hover:not(.active) {
+    color: rgba(0, 0, 0, 0.6)
+}
+
+body.light .mainHeader .mainMenu a.search svg path,
+body.light .mainHeader .mainMenu a.search svg circle {
+    fill: #000
+}
+
+body.light .mainHeader .mainMenu a.profileBtn svg>rect {
+    fill: rgba(0, 0, 0, 0.1)
+}
+
+body.light .mainHeader .mainMenu a.active {
+    border-bottom-color: var(--md-source)
+}
+
+body.light .mainHeader .mainMenu .tabsList+a svg g path {
+    fill: #000
+}
+body.light .mainHeader .mainMenu .tabsList a.active{
+    color: black;
+}
+
+body.light .mainHeader .mainMenu .tabsList+a svg path {
+    fill: #000
+}
+
+body.light .profileDrop .profileOption {
+    background-color: var(--md-sys-color-surface-light);
+    box-shadow: 0px 0px 60px 0px #0E1323
+}
+
+body.light .profileDrop .profileOption .head a path {
+    stroke: black
+}
+
+body.light .profileDrop .profileOption>.text {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .profileDrop .profileOption>.text a {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .profileDrop .profileOption>.widget span b {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .profileDrop .profileOption .widget {
+    background-color: var(--md-sys-color-on-surface-light);
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .profileDrop .profileOption .widget svg>path {
+    fill: var(--md-sys-color-on-background-light)
+}
+body.light .profileDrop .profileOption .widget svg > g path {
+    fill: var(--md-sys-color-on-background-light)
+}
+body.light .profileDrop .profileOption .widget:hover {
+    color: #fff;
+    background-color: var(--md-ref-palette-primary50)
+}
+
+body.light .profileDrop .profileOption .widget:hover svg>path {
+    fill: #fff
+}
+
+body.light .liveTv>.panel .pHead {
+    border-bottom: var(--md-sys-color-on-surface-light) solid 1px
+}
+
+body.light .liveTv>.panel .pHead .h5 {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .liveTv>.panel .pHead .controls>svg path {
+    fill: var(--md-sys-color-outline-variant-light);
+}
+
+body.light .liveTv>.panel .pHead .controls input {
+    color: var(--md-sys-color-on-surface-variant-light);
+    background-color: transparent;
+    border: var(--md-sys-color-on-surface-light) solid 2px
+}
+
+body.light .liveTv>.panel .pHead .controls input::-webkit-input-placeholder {
+    color: var(--md-sys-color-outline-variant-light);
+}
+
+body.light .liveTv>.panel .pHead .controls input::-moz-placeholder {
+    color: var(--md-sys-color-outline-variant-light);
+}
+
+body.light .liveTv>.panel .pHead .controls input:-ms-input-placeholder {
+    color: var(--md-sys-color-outline-variant-light);
+}
+
+body.light .liveTv>.panel .pHead .controls input:-moz-placeholder {
+    color: var(--md-sys-color-outline-variant-light);
+}
+
+body.light .liveTv>.panel.tvCategory {
+    background-color: var(--md-sys-color-surface-light)
+}
+
+body.light .liveTv>.panel.tvCategory .pBody>a {
+    border: transparent solid 1px;
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .liveTv>.panel.tvCategory .pBody>a svg path{
+    fill: black;
+}
+
+body.light .liveTv>.panel.tvCategory .pBody>a:hover,
+body.light .liveTv>.panel.tvCategory .pBody>a.active {
+    background-color: var(--md-ref-palette-primary50);
+    border-color: var(--md-ref-palette-primary50);
+    color: #fff
+}
+
+body.light .liveTv>.panel.tvCategory .pBody>a:hover,body.light .liveTv>.panel.tvCategory .pBody>a.active svg path{
+    fill: white;
+}
+
+body.light .liveTv>.panel.tvList {
+    background-color: var(--md-sys-color-surface-light)
+}
+
+body.light .liveTv>.panel.tvList .pBody .list:before {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .liveTv>.panel.tvList .pBody .list .channelList .info {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .liveTv>.panel.tvList .pBody .list .channelList .info a {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .liveTv>.panel.tvList .pBody .list .favourite svg[width="24"] path {
+    fill: var(--md-sys-color-on-background-light);
+    stroke: var(--md-sys-color-on-background-light)
+}
+
+body.light .liveTv>.panel.steamDetail .videoPlay {
+    background-color: var(--md-sys-color-surface-light)
+}
+
+body.light .liveTv>.panel.steamDetail .no-epg-found{
+    color: black
+}
+
+body.light .liveTv>.panel.steamDetail>.panel {
+    background-color: var(--md-sys-color-surface-light)
+}
+
+body.light .liveTv>.panel.steamDetail>.panel .pBody span {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .login>.terms {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .login>.terms a {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .login .loginInner {
+    border: var(--md-sys-color-outline-variant-light) solid 1px
+}
+
+body.light .login .infoSlide .item .h3 {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .login .infoSlide .owl-dots button {
+    background-color: var(--md-sys-color-on-surface-light)
+}
+
+body.light .login .infoSlide .owl-dots button.active {
+    background-color: var(--md-ref-palette-primary50)
+}
+
+body.light .login .loginForm {
+    background-color: var(--md-sys-color-surface-light)
+}
+
+body.light .login .loginForm .formGroup .showPassword path {
+    fill: var(--md-sys-color-outline-variant-light)
+}
+
+body.light .login .loginForm .formGroup>svg path {
+    fill: var(--md-sys-color-outline-variant-light)
+}
+
+body.light .login .loginForm .formGroup input {
+    color: var(--md-sys-color-on-surface-variant-light);
+    border: var(--md-sys-color-on-surface-light) solid 2px;
+    background-color: transparent
+}
+
+body.light .login .loginForm .formGroup input::-webkit-input-placeholder {
+    color:  var(--md-sys-color-outline-variant-light)
+}
+
+body.light .login .loginForm .formGroup input::-moz-placeholder {
+    color: var(--md-sys-color-on-surface-light)
+}
+
+body.light .login .loginForm .formGroup input:-ms-input-placeholder {
+    color: var(--md-sys-color-on-surface-light)
+}
+
+body.light .login .loginForm .formGroup input:-moz-placeholder {
+    color: var(--md-sys-color-on-surface-light)
+}
+
+body.light .login .loginForm .formGroup input:focus {
+    border-color: var(--md-sys-color-outline-variant-light)
+}
+
+body.light .login .loginForm .btn {
+    background-color: var(--md-sys-color-primary-light)
+}
+
+body.light .mainBanner .item .thumb:before,
+body.light .mainBanner .item .thumb:after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0) 100%)
+}
+
+body.light .mainBanner .item .thumb:after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 93%, rgba(255, 255, 255, 0.9) 100%)
+}
+
+body.light .mainBanner .item .thumb .effectGrad:before,
+body.light .mainBanner .item .thumb .effectGrad:after {
+    background: linear-gradient(to bottom, #fff 0%, #fff 7%, rgba(255, 255, 255, 0) 100%)
+}
+
+body.light .mainBanner .item .thumb .effectGrad:after {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 93%, #fff 100%)
+}
+
+body.light .mainBanner .item .info .h2 {
+    color: var(--md-sys-color-surface-container-low-dark)
+}
+
+body.light .mainBanner .item .info .playInfo {
+    color: var(--md-sys-color-surface-container-low-dark)
+}
+
+body.light .mainBanner .item .info .playInfo .date {
+    color: #274542;
+    background-color: #60E7BB
+}
+
+body.light .mainBanner .item .info .playInfo .rating {
+    background-color: var(--md-ref-palette-primary40);
+    color: #fff
+}
+
+body.light .mainBanner .item .info .text {
+    color: var(--md-sys-color-surface-container-low-dark)
+}
+
+body.light .mainBanner .item .info .btnGroup select {
+    color: #fff;
+    background-color: var(--md-ref-palette-primary30);
+    border: var(--md-ref-palette-primary60) solid 2px
+}
+
+body.light .mainBanner .item .info .btnGroup select:hover {
+    border-color: var(--md-sys-color-surface-container-low-dark);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3)
+}
+
+body.light .mainBanner .owl-dots button {
+    background-color: #9796B9 !important
+}
+
+body.light .mainBanner .owl-dots button.active {
+    background-color: var(--md-source) !important
+}
+
+body.light .category .h3 {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .category .item {
+    border: transparent solid 4px
+}
+
+body.light .category .item .caption:after {
+    background: linear-gradient(180deg, transparent 0%, #000 63.02%)
+}
+
+body.light .category .item .caption>* {
+    color: #fff
+}
+
+body.light .category .item .caption .control .count {
+    background-color: var(--md-ref-palette-primary30);
+    color: #fff
+}
+
+body.light .category .item .caption .h2 {
+    color: #fff;
+    z-index: 9;
+}
+
+body.light .category .item:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    border-color: var(--md-ref-palette-primary50)
+}
+
+body.light .otherOptions a {
+    color: #fff
+}
+
+body.light .castCrew .h3 {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .castCrew .item .thumb {
+    /* border: 4px solid transparent */
+}
+
+body.light .castCrew .item .h4 {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .castCrew .item:hover .thumb {
+    -webkit-box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+    border-color: #fff
+}
+
+body.light .profileSection>img path,
+body.light .profileSection>svg path {
+    fill: var(--md-sys-color-on-background-light)
+}
+
+body.light .profileSection>img path:last-child,
+body.light .profileSection>svg path:last-child {
+    fill: var(--md-ref-palette-primary50)
+}
+
+body.light .profileSection .profileList a {
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .profileSection .profileList a .thumb {
+    background-color: rgba(87, 87, 87, 0.1)
+}
+
+body.light .profileSection .profileList a.add .thumb {
+    background-color: var(--md-sys-color-on-surface-light)
+}
+
+body.light .profileSection .profileList a.add svg circle {
+    fill: var(--md-ref-palette-primary50)
+}
+
+body.light .profileSection .profileList a:hover .thumb {
+    border: var(--md-ref-palette-primary50) solid 4px
+}
+
+body.light .seriesList .h3 {
+    color: var(--md-sys-color-surface-container-low-dark)
+}
+
+body.light .seriesList .h3 b {
+    color: #676767
+}
+
+body.light .seriesList .list {
+    border: transparent solid 2px
+}
+
+body.light .seriesList .list:hover {
+    border-color: var(--md-sys-color-surface-container-low-dark)
+}
+
+body.light .seriesList .list .listLink {
+    color: var(--md-sys-color-surface-container-low-dark)
+}
+
+body.light .seriesList .list .downloadBtn {
+    background-color: var(--md-source)
+}
+
+body.light .seriesList .list .downloadBtn svg path {
+    fill: #fff
+}
+
+body.light .seriesList .list .info .h4 {
+    color: var(--md-sys-color-surface-container-low-dark)
+}
+
+body.light .splash>svg path,
+body.light .splash img path {
+    fill: var(--md-sys-color-on-background-light)
+}
+
+body.light .splash>svg path:last-child,
+body.light .splash img path:last-child {
+    fill: var(--md-ref-palette-primary50)
+}
+
+body.light .splash .playList a {
+    border: solid var(--md-ref-palette-primary50) 2px;
+    color: var(--md-sys-color-on-background-light)
+}
+
+body.light .splash .playList a:hover {
+    border-color: var(--md-sys-color-outline-variant-dark);
+    background-color: var(--md-ref-palette-primary40);
+    color: #ffffff
+}
+
+body.light .splash .playList a span.thumb {
+    background-color: var(--md-ref-palette-primary50)
+}
+
+body.light .splash>a {
+    color: var(--md-sys-color-on-background-light)
+}
+
+@media all and (max-width: 1200px) {
+    body.light .tabsList {
+        background-color: var(--md-sys-color-on-surface-light) !important
+    }
+
+    body.light .tabsList a {
+        color: var(--md-ref-palette-neutral-variant50) !important
+    }
+
+    body.light .tabsList a svg path {
+        fill: var(--md-ref-palette-neutral-variant50) !important
+    }
+
+    body.light .tabsList a.active {
+        color: black !important
+    }
+
+    body.light .tabsList a.active svg path {
+        fill: black !important;
+        stroke: black !important
+    }
+}
+
